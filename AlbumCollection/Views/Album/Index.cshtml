@@ -17,6 +17,12 @@
         <div class="album-card">
             <h1>@album.Title</h1>
             <h3>@album.Artist</h3>
+            <ul>
+                @foreach (var song in album.Songs)
+                {
+                    <li>@song.Title</li>
+                }
+            </ul>
         </div>
     }
 </body>
