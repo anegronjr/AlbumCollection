@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<AlbumCollection.Models.Album>
+
 @{
     Layout = null;
 }
@@ -11,6 +12,12 @@
     <title>Index</title>
 </head>
 <body>
-    <p>yo what up fam, it's ya boi, the index view yadiggggg</p>
+    @foreach (var album in Model)
+    {
+        <div class="album-card">
+            <h1>@album.Title</h1>
+            <h3>@album.Artist</h3>
+        </div>
+    }
 </body>
 </html>
