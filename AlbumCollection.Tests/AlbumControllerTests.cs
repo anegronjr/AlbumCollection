@@ -1,20 +1,41 @@
 using AlbumCollection.Controllers;
+using AlbumCollection.Models;
+using AlbumCollection.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using NSubstitute;
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace AlbumCollection.Tests
 {
     public class AlbumControllerTests
     {
+        AlbumController underTest;
+        IAlbumRepository repo;
+
+        public AlbumControllerTests()
+        {
+            repo = Substitute.For<IAlbumRepository>();
+            underTest = new AlbumController(repo);
+        }
+
         [Fact]
         public void Index_Returns_A_View()
         {
-            var underTest = new AlbumController();
-
             var result = underTest.Index();
 
             Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public void Index_Sets_Model_To_All_Albums()
+        {
+            var expectedModel = new List<Album>();
+            repo.GetAll().Returns(expectedModel);
+            var actualModel = underTest.Index().Model;
+
+            Assert.Equal(expectedModel, actualModel);
         }
 
     }
