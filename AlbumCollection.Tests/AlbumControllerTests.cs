@@ -38,5 +38,15 @@ namespace AlbumCollection.Tests
             Assert.Equal(expectedModel, actualModel);
         }
 
+        [Fact]
+        public void Details_Sets_Model_To_Correct_Album()
+        {
+            var expectedId = 1;
+            var expectedModel = new Album();
+            repo.GetById(expectedId).Returns(expectedModel);
+            var actualModel = underTest.Details(expectedId).Model;
+
+            Assert.Equal(expectedModel, actualModel);
+        }
     }
 }
