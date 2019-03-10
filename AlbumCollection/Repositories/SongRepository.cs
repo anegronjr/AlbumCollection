@@ -17,7 +17,7 @@ namespace AlbumCollection.Repositories
 
         public void Create(Song song)
         {
-            db.Songs.Add(song);
+            db.Add(song);
             db.SaveChanges();
         }
     }
