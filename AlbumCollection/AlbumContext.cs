@@ -30,19 +30,22 @@ namespace AlbumCollection
                     {
                         AlbumId = 1,
                         Title = "Nostalgia, Ultra",
-                        Artist = "Frank Ocean"
+                        Artist = "Frank Ocean",
+                        ImageUrl = "/Images/nostalgia.jpg"
                     },
                     new Album()
                     {
                         AlbumId = 2,
                         Title = "Channel Orange",
-                        Artist = "Frank Ocean"
+                        Artist = "Frank Ocean",
+                        ImageUrl = "/Images/orange.jpg"
                     },
                     new Album()
                     {
                         AlbumId = 3,
                         Title = "Blonde",
-                        Artist = "Frank Ocean"
+                        Artist = "Frank Ocean",
+                        ImageUrl = "/Images/blonde.jpg"
                     }
                 );
 

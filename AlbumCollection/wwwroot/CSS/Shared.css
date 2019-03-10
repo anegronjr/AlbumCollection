@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     display: grid;
     grid-template-rows: 8rem 1fr;
@@ -12,6 +16,7 @@
 
 header {
     display: flex;
+    background: white;
     position: fixed;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +24,7 @@ header {
     width: 100%;
     padding: 0 5rem;
     box-shadow: 0 5px 5px -5px #888;
+    z-index: 1;
 }
 
 .logo span {
@@ -45,11 +51,4 @@ nav li {
     margin-left: 1rem;
     list-style: none;
     cursor: pointer;
-}
-
-main {
-    grid-row-start: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }

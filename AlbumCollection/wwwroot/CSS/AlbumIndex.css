@@ -1,0 +1,86 @@
+﻿main {
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 5rem 0rem 5rem;
+}
+
+.albums-module {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    margin-bottom: 5rem;
+}
+
+.headline span {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 4rem;
+    color: #52606d;
+}
+
+    .headline::after {
+        content: ' ';
+        display: block;
+        border-bottom: solid 3px #f9703e;
+        width: 10rem;
+    }
+
+.albums-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.album-card {
+    background-size: contain;
+    height: 30rem;
+    width: 30rem;
+    margin: 0 2rem;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+
+.album-content {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto';
+    padding: 0 0 2rem 2rem;
+    transition: visibility ease 0.1s;
+    transition: padding ease 0.3s;
+}
+
+.album-title {
+    font-size: 2.5rem;
+    color: #F5F7FA;
+}
+
+.album-artist {
+    font-size: 1.2rem;
+    color: #E4E7EB;
+}
+.album-overlay {
+    height: 100%;
+    width: 100%;
+    transition: all ease 0.3s;
+}
+
+    .album-overlay:hover {
+        background: rgba(0,0,0,0.5);
+        transition: all ease 0.3s;
+    }
+
+        .album-overlay:hover .album-content {
+            visibility: visible;
+            padding: 0 0 10rem 2rem;
+            transition: all ease 0.3s;
+        }
+

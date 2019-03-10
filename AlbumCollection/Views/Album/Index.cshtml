@@ -12,6 +12,7 @@
     <title>Index</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu:100,300,400,600,700" rel="stylesheet">
     <link href="~/CSS/Shared.css" rel="stylesheet">
+    <link href="~/CSS/AlbumIndex.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -31,6 +32,17 @@
                 <div class="headline"><span>All Albums</span></div>
                 <div class="albums-container">
 
+                    @foreach (var album in Model)
+                    {
+                    <a class="album-card" style="background-image: url(@album.ImageUrl);" href="~/Album/Details/@album.AlbumId">
+                        <div class="album-overlay">
+                            <div class="album-content">
+                                <span class="album-title">@album.Title</span>
+                                <span class="album-artist">By: @album.Artist</span>
+                            </div>
+                        </div>
+                    </a>
+                    }
                 </div>
             </div>
         </main>

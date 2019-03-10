@@ -12,15 +12,23 @@
     <title>Details</title>
 </head>
 <body>
-    <h1>@Model.Title</h1>
-    <h3>@Model.Artist</h3>
-    <ul>
-        @foreach (var song in Model.Songs)
-        {
-            <li>@song.Title</li>
-        }
-    </ul>
-    <a href="/Song/Create/@Model.AlbumId">Add Song</a>
-    <a href="~/Album/Index">Return to Index</a>
+
+
+
+
+
+
+    <div>
+        <h1>@Model.Title</h1>
+        <h3>@Model.Artist</h3>
+        <ul>
+            @foreach (var song in Model.Songs)
+            {
+                <li>@song.Title</li>
+            }
+        </ul>
+        <a href="/Song/Create/@Model.AlbumId">Add Song</a>
+        <a href="~/Album/Index">Return to Index</a>
+    </div>
 </body>
 </html>
