@@ -1,0 +1,55 @@
+﻿* {
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 8rem 1fr;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+    padding: 0 5rem;
+    box-shadow: 0 5px 5px -5px #888;
+}
+
+.logo span {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+}
+
+.logo-1 {
+    color: #616e7c;
+    font-weight: 300;
+}
+
+.logo-2 {
+    color: #f9703e;
+    font-weight: 400;
+}
+
+
+nav li {
+    font-family: 'Roboto';
+    font-size: 1.7rem;
+    color: #323f4b;
+    display: inline-block;
+    margin-left: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+main {
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

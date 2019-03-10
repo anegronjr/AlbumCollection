@@ -10,15 +10,42 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu:100,300,400,600,700" rel="stylesheet">
+    <link href="~/CSS/Shared.css" rel="stylesheet">
 </head>
 <body>
-    @foreach (var album in Model)
+    <div class="container">
+        <header>
+            <div class="logo"><span class="logo-1">Album</span><span class="logo-2">Collection</span></div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Albums</li>
+                    <li>Artists</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="albums-module">
+                <div class="headline"><span>All Albums</span></div>
+                <div class="albums-container">
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+    @*@foreach (var album in Model)
     {
         <div class="album-card">
             <h1>@album.Title</h1>
             <h3>@album.Artist</h3>
             <a href="~/Album/Details/@album.AlbumId">Details</a>
         </div>
-    }
+    }*@
 </body>
 </html>
