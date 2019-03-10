@@ -30,7 +30,7 @@ namespace AlbumCollection.Controllers
         {
             repo.Create(song);
 
-            return RedirectToAction("Details/" + song.AlbumId);
+            return RedirectToAction("Details/" + song.AlbumId, "Album");
         }
     }
 }

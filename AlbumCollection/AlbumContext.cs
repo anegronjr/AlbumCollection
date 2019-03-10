@@ -28,19 +28,19 @@ namespace AlbumCollection
                 (
                     new Album()
                     {
-                        Id = 1,
+                        AlbumId = 1,
                         Title = "Nostalgia, Ultra",
                         Artist = "Frank Ocean"
                     },
                     new Album()
                     {
-                        Id = 2,
+                        AlbumId = 2,
                         Title = "Channel Orange",
                         Artist = "Frank Ocean"
                     },
                     new Album()
                     {
-                        Id = 3,
+                        AlbumId = 3,
                         Title = "Blonde",
                         Artist = "Frank Ocean"
                     }
@@ -50,265 +50,265 @@ namespace AlbumCollection
                 (
                     new Song()
                     {
-                        Id = 1,
+                        SongId = 1,
                         AlbumId = 1,
                         Title = "Strawberry Swing"                     
                     },
                     new Song()
                     {
-                        Id = 2,
+                        SongId = 2,
                         AlbumId = 1,
                         Title = "Novacane"
                     },
                     new Song()
                     {
-                        Id = 3,
+                        SongId = 3,
                         AlbumId = 1,
                         Title = "We All Try"
                     },
                     new Song()
                     {
-                        Id = 4,
+                        SongId = 4,
                         AlbumId = 1,
                         Title = "Songs 4 Women"
                     },
                     new Song()
                     {
-                        Id = 5,
+                        SongId = 5,
                         AlbumId = 1,
                         Title = "Lovecrimes"
                     },
                     new Song()
                     {
-                        Id = 6,
+                        SongId = 6,
                         AlbumId = 1,
                         Title = "There Will Be Tears"
                     },
                     new Song()
                     {
-                        Id = 7,
+                        SongId = 7,
                         AlbumId = 1,
                         Title = "Swim Good"
                     },
                     new Song()
                     {
-                        Id = 8,
+                        SongId = 8,
                         AlbumId = 1,
                         Title = "Dust"
                     },
                     new Song()
                     {
-                        Id = 9,
+                        SongId = 9,
                         AlbumId = 1,
                         Title = "American Wedding"
                     },
                     new Song()
                     {
-                        Id = 10,
+                        SongId = 10,
                         AlbumId = 1,
                         Title = "Nature Feels"
                     },
                     new Song()
                     {
-                        Id = 11,
+                        SongId = 11,
                         AlbumId = 2,
                         Title = "Start"
                     },
                     new Song()
                     {
-                        Id = 12,
+                        SongId = 12,
                         AlbumId = 2,
                         Title = "Thinkin' 'Bout You"
                     },
                     new Song()
                     {
-                        Id = 13,
+                        SongId = 13,
                         AlbumId = 2,
                         Title = "Fertilizer"
                     },
                     new Song()
                     {
-                        Id = 14,
+                        SongId = 14,
                         AlbumId = 2,
                         Title = "Sierra Leone"
                     },
                     new Song()
                     {
-                        Id = 15,
+                        SongId = 15,
                         AlbumId = 2,
                         Title = "Sweet Life"
                     },
                     new Song()
                     {
-                        Id = 16,
+                        SongId = 16,
                         AlbumId = 2,
                         Title = "Not Just Money"
                     },
                     new Song()
                     {
-                        Id = 17,
+                        SongId = 17,
                         AlbumId = 2,
                         Title = "Super Rich Kids"
                     },
                     new Song()
                     {
-                        Id = 18,
+                        SongId = 18,
                         AlbumId = 2,
                         Title = "Pilot Jones"
                     },
                     new Song()
                     {
-                        Id = 19,
+                        SongId = 19,
                         AlbumId = 2,
                         Title = "Crack Rock"
                     },
                     new Song()
                     {
-                        Id = 20,
+                        SongId = 20,
                         AlbumId = 2,
                         Title = "Pyramids"
                     },
                     new Song()
                     {
-                        Id = 21,
+                        SongId = 21,
                         AlbumId = 2,
                         Title = "Lost"
                     },
                     new Song()
                     {
-                        Id = 22,
+                        SongId = 22,
                         AlbumId = 2,
                         Title = "White"
                     },
                     new Song()
                     {
-                        Id = 23,
+                        SongId = 23,
                         AlbumId = 2,
                         Title = "Monks"
                     },
                     new Song()
                     {
-                        Id = 24,
+                        SongId = 24,
                         AlbumId = 2,
                         Title = "Bad Religion"
                     },
                     new Song()
                     {
-                        Id = 25,
+                        SongId = 25,
                         AlbumId = 2,
                         Title = "Pink Matter"
                     },
                     new Song()
                     {
-                        Id = 26,
+                        SongId = 26,
                         AlbumId = 2,
                         Title = "Forrest Gump"
                     },
                     new Song()
                     {
-                        Id = 27,
+                        SongId = 27,
                         AlbumId = 2,
                         Title = "End"
                     },
                     new Song()
                     {
-                        Id = 28,
+                        SongId = 28,
                         AlbumId = 3,
                         Title = "Nikes"
                     },
                     new Song()
                     {
-                        Id = 29,
+                        SongId = 29,
                         AlbumId = 3,
                         Title = "Ivy"
                     },
                     new Song()
                     {
-                        Id = 30,
+                        SongId = 30,
                         AlbumId = 3,
                         Title = "Pink + White"
                     },
                     new Song()
                     {
-                        Id = 31,
+                        SongId = 31,
                         AlbumId = 3,
                         Title = "Be Yourself"
                     },
                     new Song()
                     {
-                        Id = 32,
+                        SongId = 32,
                         AlbumId = 3,
                         Title = "Solo"
                     },
                     new Song()
                     {
-                        Id = 33,
+                        SongId = 33,
                         AlbumId = 3,
                         Title = "Skyline To"
                     },
                     new Song()
                     {
-                        Id = 34,
+                        SongId = 34,
                         AlbumId = 3,
                         Title = "Self Control"
                     },
                     new Song()
                     {
-                        Id = 35,
+                        SongId = 35,
                         AlbumId = 3,
                         Title = "Good Guy"
                     },
                     new Song()
                     {
-                        Id = 36,
+                        SongId = 36,
                         AlbumId = 3,
                         Title = "Nights"
                     },
                     new Song()
                     {
-                        Id = 37,
+                        SongId = 37,
                         AlbumId = 3,
                         Title = "Solo (Reprise)"
                     },
                     new Song()
                     {
-                        Id = 38,
+                        SongId = 38,
                         AlbumId = 3,
                         Title = "Pretty Sweet"
                     },
                     new Song()
                     {
-                        Id = 39,
+                        SongId = 39,
                         AlbumId = 3,
                         Title = "Facebook Story"
                     },
                     new Song()
                     {
-                        Id = 40,
+                        SongId = 40,
                         AlbumId = 3,
                         Title = "Closer To You"
                     },
                     new Song()
                     {
-                        Id = 41,
+                        SongId = 41,
                         AlbumId = 3,
                         Title = "White Ferrari"
                     },
                     new Song()
                     {
-                        Id = 42,
+                        SongId = 42,
                         AlbumId = 3,
                         Title = "Seigfried"
                     },
                     new Song()
                     {
-                        Id = 43,
+                        SongId = 43,
                         AlbumId = 3,
                         Title = "Godspeed"
                     },
                     new Song()
                     {
-                        Id = 44,
+                        SongId = 44,
                         AlbumId = 3,
                         Title = "Futara Free"
                     }
