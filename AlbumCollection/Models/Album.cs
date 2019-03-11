@@ -13,6 +13,6 @@ namespace AlbumCollection.Models
         public string Title { get; set; }
         public string Artist { get; set; }
         public string ImageUrl { get; set; }
-        public virtual IEnumerable<Song> Songs { get; set; }
+        public virtual List<Song> Songs { get; set; }
     }
 }

@@ -10,25 +10,54 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Details</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,600|Ubuntu:100,300,400,600,700" rel="stylesheet">
+    <link href="~/CSS/Shared.css" rel="stylesheet">
+    <link href="~/CSS/AlbumDetails.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="logo"><span class="logo-1">Album</span><span class="logo-2">Collection</span></div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Albums</li>
+                    <li>Artists</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="details-container">
+                <div class="album-header">
+                    <img src="@Model.ImageUrl" class="album-cover" />
+                    <div class="album-details">
+                        <div class="album-title">@Model.Title</div>
+                        <div class="album-artist">@Model.Artist</div>
+                        <div class="album-summary">
+                            <span class="num-songs">@Model.Songs.Count() songs</span>
+                            •
+                            <span class="total-runtime">42:03</span>
+                            •
+                            <span class="genre">R&B/Soul</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="songs-container">
+                <div class="num-col">#</div>
+                <div class="title-col">TITLE</div>
+                <div class="runtime-col"><i class="far fa-clock"></i></div>
 
-
-
-
-
-
-    <div>
-        <h1>@Model.Title</h1>
-        <h3>@Model.Artist</h3>
-        <ul>
-            @foreach (var song in Model.Songs)
-            {
-                <li>@song.Title</li>
-            }
-        </ul>
-        <a href="/Song/Create/@Model.AlbumId">Add Song</a>
-        <a href="~/Album/Index">Return to Index</a>
+                @for (var i = 1; i <= Model.Songs.Count(); i++)
+                {
+                    <div class="song-num">@i</div>
+                    <div class="song-title">@Model.Songs[i-1].Title</div>
+                    <div class="song-runtime">3:55</div>
+                }
+            </div>
+        </main>
     </div>
 </body>
 </html>
