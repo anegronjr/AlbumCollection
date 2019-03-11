@@ -1,0 +1,105 @@
+﻿main {
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 5rem 0rem 5rem;
+}
+
+.create-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    width: 100%;
+}
+
+.create-header {
+    margin-bottom: 2rem;
+}
+
+    .create-header span {
+        font-family: 'Roboto';
+        font-size: 2rem;
+    }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 2rem;
+}
+
+.form-group {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Roboto';
+    margin-bottom: 2rem;
+}
+
+    .form-group label {
+        position: absolute;
+        top: 0rem;
+        left: 0.5rem;
+        font-size: 1.8rem;
+        color: #616e7c;
+        transition: all 0.3s ease-in-out;
+    }
+
+.text-input {
+    border: none;
+    border-bottom: solid 1px black;
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    color: #616e7c;
+}
+
+.text-input:focus {
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+}
+
+    .text-input:focus + label {
+        position: absolute;
+        top: -2.5rem;
+        font-size: 1.5rem;
+        color: #F9703E;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .text-input:valid + label {
+        position: absolute;
+        top: -2.5rem;
+        font-size: 1.5rem;
+        color: #F9703E;
+    }
+
+.underline {
+    height: 1px;
+    border-top: solid 3px #F9703E;
+    transform: scale(0);
+    transition: all 0s ease;
+}
+
+.text-input:focus ~ .underline {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.text-input:invalid {
+    box-shadow: none;
+}
+
+input[type=submit] {
+    align-self: center;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F9703E;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 10rem;
+}
