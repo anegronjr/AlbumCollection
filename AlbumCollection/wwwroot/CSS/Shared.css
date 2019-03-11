@@ -27,6 +27,10 @@ header {
     z-index: 1;
 }
 
+.logo {
+    display: block;
+}
+
 .logo span {
     font-family: 'Ubuntu';
     font-size: 2.5rem;
